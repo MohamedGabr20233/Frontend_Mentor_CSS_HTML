@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;800;900&display=swap');
+  
+    *{
+        font-family: 'Hanken Grotesk', sans-serif;
+    
+    }
+    
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    width: 600px;
+    height: 400px;
+   border-radius: 26px;
+    display: flex;
+    justify-content: start;
+    box-shadow: 5px 5px 10px 1px rgba(155, 140, 140, 0.274) ;
+}
+.result-box{
+    background-image: linear-gradient(hsl(252, 100%, 67%) ,hsl(241, 81%, 54%));
+    border-radius: 26px;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    color:white;
+    
+}
+.result-box #title {
+    margin-top: 25px;
+    margin-left: 35%;
+    word-spacing:1px;
+    font-weight: 500; 
+
+    font-size: 18px;
+}
+.degree{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-image: linear-gradient(rgb(78, 33, 202) 10%, hsla(241, 72%, 46%, 0));
+
+    margin: 10px 70px;
+    border-radius: 50%;
+    flex-basis: 160px;
+    height: 220px;
+
+    
+}
+.degree span{
+    font-size: 50px;
+    font-weight: 900;
+    margin-top: 30px;
+}
+.degree p{
+    margin-top: 0px;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.582)
+}
+h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0px 0px;
+    font-size: 28px;
+    
+    padding-top: 0;
+}
+.state{
+    margin-top: 20px;
+    font-size: 16px;
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* The Right Side */
+.data-box{
+    width: 300px;
+    height: 100%;
+    color: #454553;
+    display: flex;
+    flex-direction: column;
+   
+}
+.data-box .title{
+    font-weight: 900;
+    font-size: 20px;
+    margin: 18px 20px;
+
+}
+.text {
+    display: flex;
+    margin: 10px 30px;
+    padding: 10px;
+    align-items: center;
+    
+}
+.text-box{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+p{
+    display: inline;
+}
+.text svg{
+    padding-right: 10px;
+}
+.text span{
+    padding-right: 70px;
+}
+.text span, .text strong , .text p {
+    font-size: 15px;
+}
+.text  strong{
+    font-weight: 100;   
+    padding-right: 5px;
+    font-weight: 600;
+ }
+ 
+ .text p{
+    color: gray;
+ }
+ 
+.t1{
+  
+   
+    background-color: #ffeae5;
+    border-radius: 10px;
+}
+.t1 span{
+    color:#ff5555 ;
+    padding-right: 66px;
+}
+
+
+.t2{
+    background-color: #fffbf2;
+    border-radius: 10px;
+}
+.t2 span{
+    color:#ffb21e;
+}
+
+.t3{
+    
+    background-color: #f2fafa;
+    border-radius: 10px;
+}
+.t3 span{
+    color:#1ec29c ;
+    padding-right: 83px;
+}
+
+.t4{
+  
+    background-color: #f3f3fd;
+    border-radius: 10px;
+}
+.t4 span{
+    color:#2d3edb ;
+    padding-right: 86px;
+}
+button{
+    color: white;
+
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 80%;
+    border: none;
+    background-color: #303b59;
+    padding:15px 10PX;
+    border-radius: 20px;
+
+    font-size: 16;
+    cursor: pointer;
+}
+
+button:active{
+    background-image: linear-gradient(rgb(78, 33, 202) , hsl(241, 72%, 46%)50%);
+}
+
+@media (max-width :600px) {
+
+    body{
+        margin: 0px;
+    }
+.container{
+    height: 100vh;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+
+    flex-flow: column;
+}        
+    .result-box{
+        width: 100%;
+        height: fit-content; 
+        border-radius: 0px  0px  26px 26px;
+    }
+    
+    .result-box #title {   
+        margin-left: 38%; 
+    }
+    .degree{      
+        margin-left: auto;
+        margin-right: auto;
+        width: 180px;
+        height: 220px;   
+    }
+    br{
+        display: none;
+    }
+    .state{   
+       width:70%;      
+        margin-bottom: 20px;
+    }
+    .data-box{
+        width: 100%;
+        height: fit-content;
+    }
+
+    .text {
+        margin: 10px 20px;
+        padding: 20px;
+       
+    }
+   
+    button{
+        color: white;
+    
+        margin-top:20px ;
+        margin-bottom: 20PX;
+        margin-left: auto;
+        margin-right: auto;
+    
+        width: 90%;
+        border: none;
+        background-color: #303b59;
+        padding:18px 10PX;
+        border-radius: 25px;
+    
+        font-size: 16;
+        cursor: pointer;
+    }
+}
