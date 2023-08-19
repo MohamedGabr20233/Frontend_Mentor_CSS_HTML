@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+/* 
+font-family: 'Inter', sans-serif;
+font-family: 'Lexend Deca', sans-serif;
+
+ */
+ *{
+    color: hsl(0, 0%, 100%);
+ }
+ 
+ body{
+    height: 100vh;
+    width: 100%;
+    background-color: #0a0c1b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0px;
+
+ }
+ .container{
+    display: flex;
+    height: 400px;
+    width: 1000px;
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: rgb(36, 3, 3);
+ }
+ .info-box{
+    width:43%;
+    background-color: #1c1938;
+    display: flex;
+   
+    padding: 20px 45px;
+ }
+ .info-box .text h1{
+    font-family: 'Inter', sans-serif;
+    width:100%;
+
+    font-weight: 700;
+    font-size:33px ;
+ }
+ .info-box .text .mark{
+    color:#b058e1;
+ }
+ .info-box .text p{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+
+    width:100%;
+    word-spacing: 2px;
+    line-height: 25px;
+
+    color:hsla(0, 0%, 100%, 0.75) ;  
+ }
+.boxs{
+    width:90%;
+
+    display: flex;
+    justify-content: space-between;
+   
+
+}
+.box h2 {
+    font-size: 22px;
+    margin-bottom: 0px;
+    margin-top: 50px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+
+}
+.info-box .text .box p{
+    letter-spacing: 2px;
+    color:    hsla(0, 0%, 100%, 0.6);  
+    font-family: 'Lexend Deca', sans-serif;
+   text-transform: uppercase;
+    font-size:10px;
+    font-weight: 400;
+
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+.image{
+    position: relative;
+}
+.middle{
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color:  hsla(277, 97%, 34%, 0.425);
+}
+@media (max-width: 952px) and (min-width: 896px) {
+    .box h2 {
+        margin-top: 20px;
+    }
+    
+}
+
+@media (max-width: 898px) {
+    
+    body{
+        height: 100%;
+    }
+    .container{
+
+        flex-flow: column-reverse;
+       
+        height: fit-content ;
+        width: 90%;
+        margin-top: 50px;
+        border-radius: 8px;
+        margin-bottom:50px;
+      
+    }
+    .middle{
+        height: 99.4%;
+     
+    }
+    .image{
+        width: 100%;
+        height: 100%;
+    
+    }
+    img{
+    
+        width: 100%;
+        height: 100%;
+      
+    }
+    .info-box{
+        width: 100%;
+        margin-top:0px;
+        flex-flow: column;
+       justify-content: start;
+       padding: 0px;
+
+    }
+    .info-box .text{
+        text-align: center;
+        margin:10px 0px;
+
+    }
+    .info-box .text h1{
+        font-size: 30px;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .info-box .text p{
+        font-size: 15px;
+       width: 90%;
+       margin-left: 5%;
+    }
+    .boxs{
+        flex-flow:column;
+
+    }
+    
+}
+ 
