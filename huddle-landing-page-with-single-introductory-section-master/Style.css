@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+/* 
+font-family: 'Poppins', sans-serif;400 600
+font-family: 'Open Sans', sans-serif; 400
+
+*/
+*{
+    color: white;
+}
+
+
+body{
+    
+    width:90%;
+    height: 100vh;
+    
+    background-color: rgb(103, 75, 176) ;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+   margin:0 1rem;
+
+}
+.container{
+    
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    
+    background-image: url(images/bg-desktop.svg);
+    background-repeat: no-repeat;
+ 
+    
+}
+.logo{
+
+  
+    margin: 4rem 2.1rem;
+    margin-bottom: 3.6rem;
+}
+.logo svg{
+    transform: scale(.7);
+}
+
+.content{
+   
+   display: flex;
+}
+.content .left{
+    margin: 0rem 4.5rem;
+    margin-bottom: 3rem;
+    margin-right: 0 ;
+    transform: scale(1vw);
+}
+.content .right {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+
+}
+.right h2{
+    font-size: 2vw;
+    line-height: 3rem;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 3.5rem;
+    word-spacing: 3px;
+    margin-top: 4.5rem;
+}
+.right p{
+    margin-left: 3.5rem;
+    font-family: 'Open Sans', sans-serif;
+    font-size:1.22vw;
+    line-height: 2rem;
+    width: 84%;
+    color: rgba(255, 255, 255, 0.869);
+    
+}
+button{
+ padding: 1vw 3.5vw;
+ border: none;
+ border-radius: 3rem;
+ align-self: start;
+ margin-left: 3.5rem;
+ margin-top: 1.8rem;
+ 
+ box-shadow: 0 4px 10px 5px hsl(257, 40%, 37%);
+
+color: rgb(116, 101, 170);
+font-size: 1.1vw;
+font-family: 'Poppins', sans-serif;
+font-weight: 400;
+
+cursor: pointer;
+}
+button:hover{
+    background-color: rgb(233, 128, 231);
+    color: white;
+}
+
+.icons{
+    
+    margin-bottom: 1rem;
+    width: 83%;
+
+    align-self: center;
+    color: aliceblue;
+    text-align: end;
+}
+.icons p{
+    height: 2rem;
+    display: flex;
+    align-items: center;
+  justify-content: end;
+    gap: 2rem;
+    margin-bottom: 0;
+}
+i{
+    font-size: 1rem;
+ 
+    border: 1px solid white;
+    padding: .8rem;
+    border-radius: 50%;
+}
+.face i{
+    padding: .6rem .85rem;
+   
+}
+.insta i{
+    padding: .6rem .75rem;
+}
+
+.X i{
+    padding: .7rem .75rem;
+}
+
+i:hover{
+    color:  hsl(300, 89%, 68%);
+    border-color: hsl(300, 81%, 64%);
+   
+}
+@media (max-width:1375px){
+ 
+    body{
+      margin: 0;
+        width: 100%;
+        height: fit-content;
+
+        
+    }   
+    .container{
+        height: 100%;
+        width:100%;
+        background-image: url(images/bg-mobile.svg);
+        background-size: contain;
+        flex-flow: column;
+    }
+    .logo{
+        transform: scale(.7);
+        align-self: start;
+        width: 100%;
+        margin-left: -2rem;
+        margin-top: .7rem;
+        margin-bottom: 0;
+    }
+    .content{
+        flex-flow: column;
+
+    }
+    .content .left {
+        margin: 0;
+      display: flex;
+      flex-flow: column;
+      align-items: start;
+      
+
+    }
+    .left svg{
+            
+       width: 19rem;
+       height:19rem;
+       
+     margin: 0px 1rem;
+     
+    }
+    
+    .right h2{
+        
+        margin: .5rem 0 ;
+        margin-bottom: 0;
+
+        text-align: center;
+        line-height: 2rem;
+         font-size: 1.3rem;
+
+    }
+    .right p{  
+         margin: 1rem 3rem;
+         width: 73%;
+         line-height: 1.5rem;
+
+        font-size: .9rem;
+        text-align: center;
+    }
+    button{
+        align-self: center;
+        margin: .5rem 0rem;
+        padding: .7rem 4.5rem;
+
+        font-size: .8rem;
+    }
+    .icons{
+        margin: 5rem 0;
+       
+    }
+    .icons p{
+        margin: 0;
+        justify-content:center ;
+        gap: 1rem; 
+    } 
+    i{
+        font-size: .9rem;
+     
+    }
+    .face i{
+        padding: .5rem .7rem;
+       
+    }
+    .insta i{
+        padding: .5rem .6rem;
+    }
+    
+    .X i{
+     padding: .5rem .55rem;
+    }
+    
+ 
+}
