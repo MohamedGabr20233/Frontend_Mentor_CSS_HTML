@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+/* font-family: 'Outfit', sans-serif; */
+*{
+    font-family: 'Outfit', sans-serif;
+    text-decoration: none;
+}
+
+body{
+    background-color: hsl(217, 54%, 11%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+height: 100vh;
+}
+.container{
+    width: 325px;
+    height:fit-content;
+    background-color:  hsl(216, 50%, 16%);
+    border-radius: 15px;
+    display: flex;
+    flex-flow: column;
+  
+    box-shadow:   0px 20px 20px 20px #0c1729 , 0px 20px 30px 40px #0d1b30;
+}
+.image{
+    display: block;
+    opacity: 1;
+    height: 50%;
+    width: 87%;
+    margin-left: 20px;
+    margin-top: 15px;   
+    position: relative;
+    cursor: pointer;
+ 
+}
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    background-color:  hsl(178, 100%, 50%);
+}
+.text{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+
+.image:hover  .middle{
+    opacity: 1;
+    background-color:  hsla(178, 100%, 50%, 0.288);
+}
+
+
+
+.image img{
+    display: hidden;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+
+.username a{
+    color:white;
+    font-family: 'Outfit', sans-serif; 
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.username a:hover{
+ 
+   color:  hsl(178, 100%, 50%);
+}
+
+.text1{
+    color:#9aafce;
+
+    font-family: 'Outfit', sans-serif; 
+    font-size: 18px;
+    font-weight: 200;
+
+    width: 89%;
+    margin-left: 20px;
+    margin-top: 0px;
+}
+.state{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.left-state , .rightstate{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-state {
+    color: hsl(178, 100%, 50%);
+    margin: 0px 20px;
+    gap: 8px;
+}
+.rightstate{
+    color:  hsl(215, 51%, 70%);
+    margin: 0px 20px;
+    gap: 8px;
+}
+hr{
+    border-left:none ;
+    border-bottom:none;
+    border-right:none ;
+    width: 85%;
+
+    border-width: 90%;
+    border: 1px solid;
+    color: hsl(215, 32%, 27%);
+   
+}
+.id-box{
+    display: flex;
+
+    justify-content: start;
+   align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.prof{
+    display: flex;
+
+    justify-content: start;
+   align-items: center;
+
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    margin-top: 0px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.prof img{
+    
+    height: 30px;
+    width: 30px;
+    border:  solid white 1px;
+    border-radius: 50%;
+    margin-right: 15px;
+   
+}
+.prof p{
+
+    color:#9aafce;
+    width: 70%;
+}
+.prof a{
+    margin-left:2px; color:white
+}
+.prof a:hover{ 
+        color:  hsl(178, 100%, 50%);
+     }
