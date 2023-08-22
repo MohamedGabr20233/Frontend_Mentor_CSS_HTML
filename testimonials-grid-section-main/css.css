@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+/* font-family: 'Barlow Semi Condensed', sans-serif; */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    height: 100vh;
+    background-color:rgb(237, 242, 248) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    
+    width: 105rem;
+    min-height: 55rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr) ;
+    grid-template-areas: 
+    
+    "violet violet gray white1"
+    "white2 black black white1" 
+    ;
+ gap: 2rem;
+}
+/* the grid tamplate  */
+.violet{
+    grid-area: violet;
+    background-color: rgb(115, 63, 200);
+  position: absolute ;
+  z-index: -1;
+}
+.gray{
+    grid-area: gray;
+    background-color: rgb(73, 85, 107);
+}
+.white1{
+    grid-area: white1;
+    background-color: rgb(255, 255, 255);
+ 
+}
+.white2{
+    grid-area: white2;
+    background-color: rgb(255, 255, 255);
+}
+.black{
+    grid-area: black;
+    background-color: rgb(24, 32, 45);
+}
+/* the box design */
+.box{
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: .8rem;
+    box-shadow: 7px 5px 15px 1px  hsla(220, 2%, 74%, 0.295);
+
+}
+/* text */
+.text{
+    margin-left: 3.5rem;
+    width: 100%;
+}
+.box h2 , .prag{
+  
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+}
+.box h2{
+    font-size: 1.8rem;
+    width:  89%;
+}
+.prag{
+    line-height: 1.8rem;
+}
+/* prof */
+.prof{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.image img{
+    width: 2.8rem;
+    height: 2.8rem; 
+
+    margin: 2.9rem 3rem;
+    margin-right: 1.6rem;
+    margin-bottom: 1.1rem;
+
+    border-radius: 50%;
+    border: .2rem rgba(255, 255, 255, 0.315) solid;
+}
+.prof .id{
+    font-size: 1.2rem;
+    margin-top: 1.6rem;
+}
+.prof .id p{
+    color:  rgba(255, 255, 255, 0.885);
+}
+.prof .id span{
+    color:  rgb(255, 255, 255);
+    font-size: 1rem;
+    opacity: 50%;
+}
+/* icon */
+
+.violet .icon{
+    position: absolute;
+    z-index: -1;
+    right: 7rem;
+}
+
+/* each box */
+/* violet */
+.violet h2{
+    color: #f3e1f8;
+}  
+.violet .prag{
+    color: #f8f4f9;
+    opacity: 50%;
+    width: 93%;
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+}
+/* gray */
+.gray h2{
+    color:rgb(241, 244, 250) ;
+    font-size: 1.8rem;
+    width: 78%;
+}
+.gray .prag{
+    color:rgb(241, 244, 250) ;
+    opacity: 50%;
+    width: 78%;
+    font-size: 1.3rem;
+}
+.gray img{
+    border: 0;
+}
+
+/* white1 */
+.white1 .text , .white1 .id p ,.white1 .id span  {
+    color:rgb(109, 117, 137)
+}
+.white1 .prag{
+    width: 79%;
+    font-size: 1.3rem;
+}
+/* white2 */
+.white2 .text , .white2 .id p ,.white2 .id span  {
+    color:rgb(109, 117, 137);
+   
+}
+.white2 .text h2 {
+    width: 70%;
+    margin-bottom:2.2rem;
+}
+.white2 .prag{
+    width: 79%;
+    font-size: 1.3rem;
+     opacity: 70%;
+}
+/* black */
+.black img{
+    border:.2rem solid rgb(89, 71, 140);
+}
+.black .text , .black.id p ,.black .id span  {
+    color:rgb(230, 238, 250);
+   
+}
+.black .text h2 {
+    width:85%;
+    margin-bottom:2.2rem;
+}
+.black .prag{
+    width: 90%;
+    font-size: 1.3rem;
+    opacity: 50%;
+}
+@media (max-width:80rem) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        width: 90%;
+        margin: 10rem 0;
+      
+    }
+
+    body{
+        height: fit-content;
+       
+    }
+    .text{
+        width: 90%;
+    }
+    .icon{
+        top: 0;
+        width:  17%;
+    }
+
+    .box{
+        box-shadow: 0 1rem 2rem .2rem rgba(0, 0, 0, 0.189);
+    }
+    /* violet box */
+    .violet{
+        order:1;
+    }
+    .violet h2{
+        width: 81%;
+    }
+    .violet .prag{
+        width:85%;
+    }
+    /* gray */
+    .gray{
+        order: 2;
+    }
+    .gray .prag{
+        width: 95%;
+        margin-bottom: 3rem;
+    }
+   
+    /* White2 */
+    .white2{
+        order: 3;
+    }
+    .white2 .text h2{
+            margin-bottom: 1.2rem;
+    }
+    .white2 .prag{
+        width: 85%; 
+         margin-bottom: 3rem;
+    }
+    /* black */
+    .black{
+        order:4;
+    }
+    .black .text h2{
+        width: 80%;
+    }
+    .black .prag{
+        width: 90.5%;  
+        margin-bottom: 3.5rem;
+    }
+    /* White1 */
+    .white1{
+        order:5;
+    }
+    .white1 .text h2{
+        width:90%;
+        font-size: 2rem;
+        margin-top: .5rem;
+    }
+    .white1 .prag{
+        width: 90%;  
+        margin-bottom: 3.5rem;
+    }
+}
+ 
