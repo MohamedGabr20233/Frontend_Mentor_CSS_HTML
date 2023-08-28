@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+/* font-family: 'Raleway', sans-serif; */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(12, 18, 44);
+    position: relative;
+}
+.background{
+    position: absolute;
+    width: 100%;
+    height: 48rem;
+    z-index: -1;
+    bottom:0;
+     background-image: url(images/bg-desktop.png);
+    background-size: cover;
+}
+
+.container{
+   position: relative;
+    height: 18rem;
+    width: 67%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 5rem;
+}
+.left{
+    width: 36%;
+    height: 100%;
+    background-color: rgb(30, 44, 105);
+    display: flex;
+    flex-flow: column;
+    box-shadow: 0 8rem 1rem 8rem  hsla(229, 57%, 11%, 0.058) , 0 3.4rem 1rem 1rem  hsla(229, 57%, 11%, 0.052);
+
+
+    border-radius: 1rem 9rem 1rem 1rem;
+}
+.logo{
+    margin: 3.5rem 2.5rem;
+    margin-bottom: 2.5rem;
+    transform: scale(.9);
+}
+ul{
+    margin: 0rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+ul il {
+  
+   margin: 0 .7rem;
+   background-color: rgb(12, 18, 44);
+   padding: 1rem 1rem;
+
+   height: 2.3rem;
+   border-radius: 1rem;
+   
+   
+    
+}
+ul .folder svg , ul .cloud svg{
+    transform: scale(.9);
+    padding-top: .3rem;
+}
+ul .folder svg , ul .file svg{
+    transform: scale(.9);
+    padding-bottom: .3rem;
+}
+
+/* right */
+.right{
+
+    width: 70%;
+    height: 80%;
+    position: relative;
+    bottom: -10%;
+    background:rgb(29, 43, 104) ;
+    border-radius: 1rem;
+
+    display: flex;
+    flex-flow: column;
+    box-shadow: 0 8rem 1rem 8rem  hsla(229, 57%, 11%, 0.058) , 0 3.4rem 1rem 1rem  hsla(229, 57%, 11%, 0.052);
+
+}
+.internt{
+    background-color: white;
+    height:7em;
+    width: 18rem;
+    position: absolute;
+    right: 4rem;
+    top: -4.5rem;
+    border-radius: 1rem 1rem 0 1rem ;
+
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+
+    
+}
+.internt:after{
+    content: '';
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute;
+
+    bottom: -2.6rem;
+    right: 0;
+   border-right: 22px solid white ;
+   border-bottom: 26px solid transparent;
+
+}
+.internt h2{
+    font-size: 4rem;
+    margin-left: 2.5rem;
+    font-weight: 700;
+}
+.internt span{
+    margin-top: .5rem;
+    word-spacing: 3px;
+   
+    font-weight: 700;
+
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-variant: small-caps;
+   
+  
+    color: #929399;
+}
+.content{
+    margin-left: 4rem;
+    margin-top: 3.7rem;
+    color: white;
+}
+
+.info{ 
+font-size: 1.4rem;
+font-weight: 400;
+color: rgba(204, 208, 234, 0.88);
+}
+.info span{
+    font-weight: 700;
+    color: hsl(243, 100%, 93%);
+}
+/* bar */
+.line{
+    height: 1.6rem;
+    width: 91%;
+    background-color: rgb(21, 30, 73);
+    margin: 2rem 0;
+    margin-bottom: 1rem;
+    margin-left: .2rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    
+}
+.color-line{
+    width: 75%;
+    height: 75%;
+    background-image:linear-gradient( to right , hsl(6, 100%, 80%) , hsl(335, 100%, 65%)) ;
+    margin: 0 .3rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    position: relative;
+}
+.circle{
+    height: 75%;
+    width: .9rem;
+    margin-right: .2rem;
+    background-color: white;
+    border-radius: 50%;
+   
+}
+.data-info{
+    width:91.5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: rgb(219, 220, 255);
+}
+@media (max-width:870px) {
+    body{
+        background-image: url(images/bg-mobile.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+      
+    }
+    .background{
+        display: none;
+    }
+    .container{
+        width: 85%;
+        height: fit-content;
+        flex-flow: column;
+        gap:2rem;
+    }
+    .left{
+        width: 100%;
+        height: 85%;
+    }
+    .logo{
+        transform: scale(1);
+        margin-left: 3.8rem;
+    }
+    .left ul{
+        margin-bottom: 4.5rem;
+        margin-left: 3.8rem;
+        margin-top: .5rem;
+        transform: scale(1.1);
+    }
+   
+    /* right */
+    .right{
+        width: 100%;
+        height: 70%;
+    }
+    .right .data-info{
+        margin-bottom: 5rem;
+    }
+    .circle{
+        margin-bottom: 1px;
+    }
+    .content{
+        margin-left: 10%;
+        
+    }
+    .content p{
+        margin-left: 1.5rem;
+    }
+   
+    .internt{
+        position: absolute;
+        top: 80%;
+       left: 25%;
+       border-radius: 1rem;
+       width: 55%;
+       align-items: center;
+       justify-content: center;
+       
+    }
+    .internt h2{
+        margin-left: 0;
+    }
+    .internt::after{
+        display: none;
+    }
+}
